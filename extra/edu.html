@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./ico/favicon.ico" />    
+    <link rel="stylesheet" href="edu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <title>My Resume</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="demo-carousel" class="carousel">
+        <a class="carousel-item active" href="../resume.html"><img width="200px" height="200px" src="img/aboutme.jpg"></a>
+        <a class="carousel-item" href="#education"><img width="250px" height="200px" src="img/Education.jpg"></a>
+        <a class="carousel-item" href="#skills"><img height="250px" src="img/skills.png"></a>
+        <a class="carousel-item" href="#internship"><img width="250px" height="200px" src="img/internship.jpg"></a>
+        <a class="carousel-item" href="#hobbies"><img width="250px" height="200px" src="img/hobby.jpg"></a>
+        <a class="carousel-item" href="#achievements"><img width="250px" height="200px" src="img/achieve.jpg"></a>
+      </div>
+    </div>
+
+    <div id="back-image">
+      <div class="container">
+        <ul class="collapsible popout" data-collapsible="accordion">
+          <li>
+            <div id="education" class="collapsible-header"><i class="fas fa-university fa-2x"></i> Alma Mater</div>
+            <div class="collapsible-body card-panel red lighten-4">
+              <span>
+                <table class="bordered striped highlight centered responsive-table">
+                  <thead>
+                    <tr>
+                      <th>Education</th>
+                      <th>University/<br>Board</th>
+                      <th>CGPA/<br>Percent</th>
+                      <th>Year</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>B.E.(C.S.E.)</td>
+                      <td>S.S.G.B.C.O.E.T., Bhusawal/North Maharashtra University</td>
+                      <td>8.48/77.3</td>
+                      <td>2014 - 2018</td>
+                    </tr>
+                    <tr>
+                      <td>H.S.C(XII)</td>
+                      <td>Maharashtra State Board of Secondary and Higher Secondary Education</td>
+                      <td>75.85</td>
+                      <td>2013 - 2014</td>
+                    </tr>
+                    <tr>
+                      <td>S.S.C(X)</td>
+                      <td>Maharashtra State Board of Secondary and Higher Secondary Education</td>
+                      <td>90.55</td>
+                      <td>2011 - 2012</td>
+                    </tr>
+                </tbody>
+              </table>
+             </span>
+            </div>
+          </li>
+
+        <!-- Skills -->
+          <li>
+            <div id="skills" class="collapsible-header"><i class="fas fa-child btn btn-floating pulse"></i>Skills</div>
+              <div class="collapsible-body card-panel red accent-1">
+                <span>
+                  <i class="fab fa-html5 fa-4x"></i>
+                  <progress value="65" max="100" style="width: 100%;">68%</progress><span><br></span>
+                  <i class="fab fa-css3-alt fa-4x"></i>
+                  <progress value="56" max="100" style="width: 100%;">56%</progress><br><span><br></span>
+                  <i class="fab fa-git fa-4x"></i>
+                  <progress value="42" max="100" style="width: 100%;">42%</progress><br><span><br></span>
+                  <i class="fas fa-database fa-4x"></i>
+                  <progress value="68" max="100" style="width: 100%;">68%</progress><br><span><br></span>
+                  <i class="fab fa-js-square fa-4x"></i>
+                  <progress value="58" max="100" style="width: 100%;">58%</progress><br><span><br></span>
+                </span>
+              </div>
+          </li>
+
+    <!-- Achievements  -->
+          <li>
+            <div id="achievements" class="collapsible-header"><i class="fas fa-hourglass-half btn btn-floating pulse"></i> Achievements</div>
+              <div class="collapsible-body card-panel red lighten-3">
+                <span>
+                  <ol>
+                    <li>Selected as a Campus Ambassador by <b>Youth4work</b>.</li>
+                    <li>Selected as a Campus Ambassador by <b>Internshala</b>.</li>
+                    <li>Selected in a fellowship program which was an initiative of <b>Yesfoundation</b> for change.</li>
+                    <li>Attended 2 days Cybersecurity workshop arranged by Skynet Tech. in accordance with IITHyd.</li>
+                    <li>Web Development course at <b>Internshala</b>.</li>
+                    <li>Completed cybernetic course at Cybrary.</li>
+                    <li>Google frontend web development scholarship programme held by <strong>Udacity</strong>.</li>
+                  </ol>
+                </span>
+              </div>
+          </li>
+
+    <!-- Internship -->
+          <li>
+            <div id="internship" class="collapsible-header"><i class="fas fa-briefcase btn btn-floating pulse"></i>Internship</div>
+              <div class="collapsible-body">
+                <span>
+                  <div class="card">
+                     <div class="card-image waves-effect waves-block waves-light">
+                       <img class="activator" src="./img/intern.jpg">
+                     </div>
+                     <div class="card-content">
+                         <span class="card-title activator grey-text text-darken-4">Campus Ambassador<i class="material-icons right">more_vert</i></span>
+                           <a href="www.internshala.com"><button class="btn waves-effect waves-light" type="button">Internshala<i class="material-icons right"></i></button></a>
+                    </div>
+                    <div class="card-reveal">
+                       <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Campus Ambassador</span>
+                       <br>
+                       <br>
+                       <ul>
+                         <li>Point of contact of the organization in the institute.</li>
+                         <li>Performing weekly or monthly activities allotted by the organization.</li>
+                         <li>Communicating with students and introducing them to the internship platform.</li>
+                         <li>Carrying out presentation and keeping students updated with the Internshala platform.</li>
+                       </ul>
+                    </div>
+                </div>
+            </span>
+          </div>
+        </li>
+
+    <!-- Hobbies -->
+          <li>
+            <div id="hobbies" class="collapsible-header"><i class="fab fa-hire-a-helper btn btn-floating pulse"></i>Hobbies</div>
+              <div class="collapsible-body card-panel orange darken-2">
+                <span>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col s6">
+                        <img class="materialboxed" data-caption="cycling" width="250" src="./img/cycling.jpg">
+                      </div>
+                      <div class="col s6">
+                        <img class="materialboxed" data-caption="space geek" width="350" src="./img/space1.jpg">
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col s6">
+                        <img class="materialboxed" data-caption="traveling" width="250" src="./img/travel.jpg">
+                      </div>
+                      <div class="col s6">
+                        <img class="materialboxed" data-caption="hacking" width="250" src="./img/hack.jpg">
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col s8">
+                        <img class="materialboxed" data-caption="dancing" src="./img/dance.jpg" width="300">
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </div>
+          </li>
+
+    <!-- Project -->
+          <li>
+            <div id="projects" class="collapsible-header"><i class="fas fa-file fa-2x"></i> Project</div>
+              <div class="collapsible-body card-panel red lighten-3">
+                <span>
+                  <!-- Modal Trigger -->
+                      <button data-target="modal1" class="btn modal-trigger">Pixel Art Maker</button>
+                  <!-- Modal Structure -->
+                    <div id="modal1" class="modal">
+                      <div class="modal-content">
+                        <h4>Pixel Art Maker</h4>
+                        <p>Created a pixel art maker as an assignment for Udacity's Google Frontend
+                        Web Development scholarship program.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="https://codepen.io/vinrok/full/OvKwOv" target="_blank" class="modal-action modal-close waves-effect waves-green btn-flat">Move Here</a>
+                      </div>
+                    </div>
+                </span><br><br>
+                <span>
+                  <!-- Modal Trigger -->
+                      <button data-target="modal2" class="btn modal-trigger">E-commerce website</button>
+                  <!-- Modal Structure -->
+                    <div id="modal2" class="modal">
+                      <div class="modal-content">
+                        <h4>E-commerce website</h4>
+                        <p>Created a shopping website using html, css, bootstrap, php, mysql technologies
+                          as an assignment for Internshala Web Development program.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="https://github.com/vinrok/shoppee.git" target="_blank" class="modal-action modal-close waves-effect waves-green btn-flat">Move Here</a>
+                      </div>
+                    </div>
+                </span><br><br>
+                <span>
+                  <!-- Modal Trigger -->
+                      <button data-target="modal3" class="btn modal-trigger">Wkisearch app</button>
+                  <!-- Modal Structure -->
+                    <div id="modal3" class="modal">
+                      <div class="modal-content">
+                        <h4>WikiSearch App</h4>
+                        <p>Created a web application using html, css, and wikipedia api
+                          as an assignment for Udemy Javascript for beginner course.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="https://github.com/vinrok/wikisearch.git" target="_blank" class="modal-action modal-close waves-effect waves-green btn-flat">Move Here</a>
+                      </div>
+                    </div>
+                </span><br><br>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="bk-img">
+    	<div class="container">
+    		<div class="video-container">
+            <iframe src="https://player.vimeo.com/video/269318628" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    		</div>
+    	</div>
+    </div>
+
+
+    <footer class="page-footer">
+       <strong>Made with <i class="fas fa-code fa-1x"></i> and <i class="fas fa-coffee fa-1x"></i>
+       </strong>
+            <a href="#demo-carousel" class="up right"> <i class="fas fa-arrow-alt-circle-up fa-1x"></i></a>
+            <a class="grey-text text-lighten-4 right" href="mailto:chitrakathi03@hotmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+    </footer>
+
+    <script>
+      $(document).ready(function(){$('#demo-carousel').carousel();});
+    </script>
+
+    <script>
+      $(document).ready(function(){$('.modal').modal();});
+    </script>
+  </body>
+</html>
