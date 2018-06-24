@@ -32,7 +32,8 @@ body{
 
 .intro:hover{
   color: yellow;
-  -moz-transform:scale(1.15);
+  -moz-transform:scale(1.18);
+  transform: scale(1.18);
   }
 
 /* intro-bgrnd */
